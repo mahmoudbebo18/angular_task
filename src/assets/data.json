@@ -1,0 +1,365 @@
+{
+  "id": 3268,
+  "name": "Register",
+  "description": null,
+  "helpText": null,
+  "formInputs": [
+    {
+      "id": 78679,
+      "uuid": "ae2c1653-83e7-498e-93aa-71f8f7dddfcb",
+      "label": "Full name",
+      "name": "fullname",
+      "weight": 0,
+      "type": "name",
+      "typeName": "Name",
+      "formId": 3268,
+      "placeholder": "Full name",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 1,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "display": true,
+        "translations": {
+          "fra": "Nom et prénom",
+          "por": "Full name",
+          "rus": "Full name",
+          "ara": "الاسم بالكامل"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": ["required"],
+      "filters": [],
+      "associated": null,
+      "isTitratable": false,
+      "values": []
+    },
+    {
+      "id": 78680,
+      "uuid": "be9e5284-0391-439c-9d7e-550e39c8dc01",
+      "label": "E-mail",
+      "name": "email",
+      "weight": 1,
+      "type": "email",
+      "typeName": "E-mail",
+      "formId": 3268,
+      "placeholder": "E-mail",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 1,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "translations": {
+          "ara": "البريد الإلكتروني",
+          "fra": "E-mail",
+          "por": "E-mail",
+          "rus": "E-mail"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": ["required", "email"],
+      "filters": [],
+      "associated": null,
+      "isTitratable": false,
+      "values": []
+    },
+    {
+      "id": 78681,
+      "uuid": "945f8bb7-07b6-4ce5-82cf-85ed25297ee9",
+      "label": "Phone number",
+      "name": "phone",
+      "weight": 2,
+      "type": "phone",
+      "typeName": "Phone number",
+      "formId": 3268,
+      "placeholder": "Phone number",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 0,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "translations": {
+          "ara": "رقم الهاتف",
+          "fra": "Numéro de téléphone",
+          "por": "Phone number",
+          "rus": "Phone number"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": ["phone"],
+      "filters": [],
+      "associated": null,
+      "isTitratable": false,
+      "values": []
+    },
+    {
+      "id": 78718,
+      "uuid": "355694e8-d80f-4b25-b3de-eb403bf78b29",
+      "label": "Job title",
+      "name": "job_title",
+      "weight": 3,
+      "type": "job_title",
+      "typeName": "Job Title",
+      "formId": 3268,
+      "placeholder": "Job title",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 0,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "display": true,
+        "translations": {
+          "ara": "الوظيفة",
+          "fra": "Titre d'emploi",
+          "por": "Cargo",
+          "rus": "должность"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": [],
+      "filters": [],
+      "associated": "group1",
+      "isTitratable": false,
+      "values": []
+    },
+    {
+      "id": 78719,
+      "uuid": "c755c510-2326-43cf-ae73-ca47bcfcbf64",
+      "label": "Organization",
+      "name": "organization",
+      "weight": 4,
+      "type": "organization",
+      "typeName": "Organization",
+      "formId": 3268,
+      "placeholder": "Organization",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 0,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "display": true,
+        "translations": {
+          "ara": "الشركة",
+          "fra": "Organisation",
+          "por": "Organização",
+          "rus": "организация"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": [],
+      "filters": [],
+      "associated": "group1",
+      "isTitratable": false,
+      "values": []
+    },
+    {
+      "id": 78682,
+      "uuid": "fbce44cb-4f98-4b22-b5f5-7a72fc41abf3",
+      "label": "Country",
+      "name": "country",
+      "weight": 5,
+      "type": "country",
+      "typeName": "Country",
+      "formId": 3268,
+      "placeholder": "Country",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 0,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "translations": {
+          "ara": "بلد الإقامة",
+          "fra": "Pays",
+          "por": "Country",
+          "rus": "Country"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": [],
+      "filters": [],
+      "associated": null,
+      "isTitratable": false,
+      "values": [
+        {
+          "id": 11900,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Armenia",
+          "name": "Armenia",
+          "label": "Armenia",
+          "weight": 0
+        },
+        {
+          "id": 11901,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Bahrain",
+          "name": "Bahrain",
+          "label": "Bahrain",
+          "weight": 1
+        },
+        {
+          "id": 11902,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Albania",
+          "name": "Albania",
+          "label": "Albania",
+          "weight": 2
+        },
+        {
+          "id": 11903,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Canada",
+          "name": "Canada",
+          "label": "Canada",
+          "weight": 3
+        },
+        {
+          "id": 11904,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-China",
+          "name": "China",
+          "label": "China",
+          "weight": 4
+        },
+        {
+          "id": 11905,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Denmark",
+          "name": "Denmark",
+          "label": "Denmark",
+          "weight": 5
+        },
+        {
+          "id": 11906,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Eritrea",
+          "name": "Eritrea",
+          "label": "Eritrea",
+          "weight": 6
+        },
+        {
+          "id": 11907,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Finland",
+          "name": "Finland",
+          "label": "Finland",
+          "weight": 7
+        },
+        {
+          "id": 11908,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Germany",
+          "name": "Germany",
+          "label": "Germany",
+          "weight": 8
+        },
+        {
+          "id": 11909,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Greece",
+          "name": "Greece",
+          "label": "Greece",
+          "weight": 9
+        },
+        {
+          "id": 11910,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Hungary",
+          "name": "Hungary",
+          "label": "Hungary",
+          "weight": 10
+        },
+        {
+          "id": 11911,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-Iceland",
+          "name": "Iceland",
+          "label": "Iceland",
+          "weight": 11
+        },
+        {
+          "id": 11912,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9-India",
+          "name": "India",
+          "label": "India",
+          "weight": 12
+        }
+      ]
+    },
+    {
+      "id": 78683,
+      "uuid": "cf3fcbb3-6af5-4490-9155-66408cfece03",
+      "label": "Gender",
+      "name": "gender",
+      "weight": 6,
+      "type": "gender",
+      "typeName": "Gender",
+      "formId": 3268,
+      "placeholder": "Gender",
+      "description": null,
+      "helpText": null,
+      "defaultValue": null,
+      "isRequired": 0,
+      "priorityIndicator": 1,
+      "isUnique": false,
+      "isDisableOnsite": false,
+      "isDisableOnline": false,
+      "options": {
+        "translations": {
+          "ara": "النوع",
+          "fra": "Genre",
+          "por": "Gender",
+          "rus": "Gender"
+        }
+      },
+      "customRequiredErrorMessage": null,
+      "validators": [],
+      "filters": [],
+      "associated": null,
+      "isTitratable": false,
+      "values": [
+        {
+          "id": 11933,
+          "uuid": "dfa69828-307c-4f98-9864-f1881bcc18c9",
+          "name": "Male",
+          "label": "Male",
+          "weight": 0,
+          "options": {
+            "translations": {
+              "ara": "ذكر",
+              "fra": "Homme",
+              "por": "Male",
+              "rus": "Male"
+            }
+          }
+        },
+        {
+          "id": 11934,
+          "uuid": "2d66ff0a-e8f0-42dd-8384-f9b5694255bf",
+          "name": "Female",
+          "label": "Female",
+          "weight": 1,
+          "options": {
+            "translations": {
+              "ara": "أنثى",
+              "fra": "Femme",
+              "por": "Female",
+              "rus": "Female"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

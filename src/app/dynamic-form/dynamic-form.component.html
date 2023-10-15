@@ -1,0 +1,40 @@
+<nav class="nav">
+    <div class="container">
+        <h1> {{title}} </h1>
+        <div>
+            <select (change)="onLanguageChange($event)">
+                <option value="en"> English </option>
+                <option value="ara"> العربية </option>
+                <option value="fra"> France </option>
+                <option value="por"> Portugal </option>
+                <option value="rus"> Russia </option>
+            </select>
+        </div>
+    </div>
+</nav>
+<section class="dynamic_form">
+
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form_group" *ngFor="let field of formData; let i = index">
+            <div class="">
+                <label class="label">{{ field.options.translations[selectedLanguage] || field.label }}</label>
+                <div *ngIf="field.values && field.values.length > 0; else inputField">
+                    <select formControlName="{{ field.name }}">
+                        <option *ngFor="let option of field.values" [value]="option.id">{{ option.name }}</option>
+                    </select>
+                </div>
+                <ng-template #inputField>
+                    <input [placeholder]="field.options.translations[selectedLanguage] || field.label" [formControlName]="field.name" />
+                </ng-template>
+                <div class="error_msg"
+                    *ngIf="form.get(field.name)!.hasError('required') && form.get(field.name)!.touched">
+                    {{ field.label }} is required.
+                </div>
+                <div class="error_msg" *ngIf="form.get(field.name)!.hasError('email') && form.get(field.name)!.touched">
+                    valid {{ field.label }} is required.
+                </div>
+            </div>
+        </div>
+        <button class="submit" type="submit">Submit</button>
+    </form>
+</section>
